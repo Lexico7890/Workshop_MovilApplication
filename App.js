@@ -1,21 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import './styles/GlobalStyles'
+import {useFonts} from 'expo-font'
+import {AppLoading} from 'expo'
+import SignInStack from './routers/SignInStack'
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  const[fondLoaded] = useFonts({'Monofett-Regular': require('./assets/fonts/Monofett-Regular.ttf')});
+    if(!fondLoaded){
+      return(
+        <AppLoading/>
+      );
+    }else{
+      return(
+        <SignInStack/>
+      );
+    }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
