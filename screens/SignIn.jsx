@@ -7,11 +7,12 @@ import Inputs from './Inputs'
 export default function SignIn({navigation}){
     return(
         <View style={GlobalStyles.container}>
-            <View style={GlobalStyles.boxFormSignIn}>
+            <View style={GlobalStyles.boxSignIn}>
                 <Text style={GlobalStyles.titleText}>MINCA</Text>
-                <Inputs navigation={navigation}/>
             </View>
-            
+            <View style={GlobalStyles.boxFormSignIn}>
+            <Inputs navigation={navigation}/>
+            </View>
         </View>
     )
 }

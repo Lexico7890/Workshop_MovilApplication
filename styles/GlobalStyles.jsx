@@ -4,16 +4,38 @@ import {StyleSheet} from 'react-native';
 export const GlobalStyles = StyleSheet.create({
     container:{
         flex: 1,
-        padding: 20,
+        padding: 0,
+        backgroundColor: '#ffffff'
+    },
+    boxSignIn:{
+        alignItems:'center',
+        justifyContent: "center",
+        flex: 1.7,
+        backgroundColor: '#000',
+        borderBottomLeftRadius: 25,
+        borderBottomRightRadius: 25,
+        borderColor: 'yellow',
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 7,
+        },
+        shadowOpacity: 0.43,
+        shadowRadius: 9.51,
+
+        elevation: 15,
     },
     boxFormSignIn:{
         alignItems:'center',
-        justifyContent: "center",
-        flex: 1
+        justifyContent: 'center',
+        flex: 1,
+        backgroundColor: '#fff',
+        padding: 0,
     },
     titleText:{
         fontFamily: 'Monofett-Regular',
         fontSize: 82, 
+        color: 'red'
     },
     input:{
         borderWidth: 1,
