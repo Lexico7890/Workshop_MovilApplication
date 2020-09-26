@@ -2,13 +2,13 @@ import React from "react";
 import { Formik } from "formik";
 import { TextInput, Button, View } from "react-native";
 import { GlobalStyles } from "../styles/GlobalStyles";
-import ButtonOne from './ButtonOne'
+import ButtonOne from "./ButtonOne";
 
-export default function Inputs({navigation}) {
+export default function Inputs({ navigation }) {
   return (
     <View>
       <Formik
-        initialValues={{ email: '', password: '' }}
+        initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
           console.log(values);
         }}
@@ -17,7 +17,7 @@ export default function Inputs({navigation}) {
           <View>
             <TextInput
               style={GlobalStyles.input}
-              placeholder="Email"
+              placeholder="Email o correo"
               onChangeText={props.handleChange("email")}
               value={props.values.email}
               keyboardType="email-address"
@@ -29,7 +29,7 @@ export default function Inputs({navigation}) {
               value={props.values.password}
               secureTextEntry={true}
             />
-            <ButtonOne text='Ingresar' onPress={props.handleSubmit}/>
+            <ButtonOne text="Ingresar" onPress={props.handleSubmit} />
           </View>
         )}
       </Formik>
