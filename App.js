@@ -4,7 +4,6 @@ import "./styles/GlobalStyles";
 import { useFonts } from "expo-font";
 import { AppLoading } from "expo";
 import SignInStack from "./routers/SignInStack";
-import AsyncStorage from "@react-native-community/async-storage";
 import useUser from "./hooks/useUser";
 import HomeStack from "./routers/HomeStack";
 

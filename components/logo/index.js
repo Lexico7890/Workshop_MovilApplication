@@ -11,7 +11,7 @@ export default function Logo(props) {
       <defs>
         <style>
           {
-            ".prefix__cls-1{fill:#e30613;stroke:#e30613;stroke-miterlimit:10;stroke-width:2px}"
+            ".prefix__cls-1{fill:#e30613;stroke:#e30613;stroke-miterlimit:10;stroke-width:8px}"
           }
         </style>
       </defs>
