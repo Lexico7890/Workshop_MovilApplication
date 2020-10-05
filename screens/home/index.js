@@ -4,7 +4,6 @@ import Avatar from "../../components/avatar";
 import useUser from "../../hooks/useUser";
 
 export default function Home({ navigation }) {
-  console.log();
   const user = useUser({ navigation });
   return (
     <>
@@ -110,8 +109,6 @@ export default function Home({ navigation }) {
     </>
   );
 }
-
-const num = 25;
 
 const StyleHome = StyleSheet.create({
   container: {
